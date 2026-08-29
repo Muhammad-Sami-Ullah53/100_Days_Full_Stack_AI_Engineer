@@ -10,3 +10,7 @@ Student = {
     "dept": "Computer Science"
 }
 print(Student["name"])
+
+print(Student.values()) # is me hm sari values ko print krwa skty hn
+print(Student.keys()) # is me hm sari keys ko print krwa skty hn
+print(Student.items()) # is me hm sari keys orr values ko print krwa skty hn
