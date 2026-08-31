@@ -18,4 +18,22 @@ user.show_profile()
         
         
 
-        
+class BankAccount:
+    def __init__(self,name,balance):
+        self.name=name
+        self.balance=balance
+    def deposite(self,amount):
+        self.balance+=amount
+    def withdraw(self,amount):
+        if(amount<self.balance):
+            self.balance-=amount
+        else:
+            print("Insufficient Balance")
+    def display(self):
+        print(f"Account Holder: {self.name}")
+        print(f"Balance: {self.balance}")
+user1=BankAccount("hamza",0)
+user1.display()
+user1.deposite(500)
+user1.withdraw(100)
+user1.display()
