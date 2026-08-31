@@ -23,9 +23,13 @@ class BankAccount:
         self.name=name
         self.balance=balance
     def deposite(self,amount):
-        self.balance+=amount
+        
+        if amount>0:
+            self.balance+=amount
+        else:
+            print("Invalid Amount")
     def withdraw(self,amount):
-        if(amount<self.balance):
+        if amount<self.balance:
             self.balance-=amount
         else:
             print("Insufficient Balance")
@@ -37,3 +41,31 @@ user1.display()
 user1.deposite(500)
 user1.withdraw(100)
 user1.display()
+
+
+class Product:
+    def __init__(self,name,price,stock):
+        self.name=name
+        self.price=price
+        self.stock=stock
+    def add_stock(self,quantity):
+        if quantity>0:
+            self.stock+=quantity
+        else:
+            print("Invalid Quantity")
+    def buy(self,quantity):
+        if self.stock>quantity>0:
+            self.stock-=quantity
+        else:
+            print("Low Stock")
+    def show_products(self):
+        print(f"Names: {self.name}")
+        print(f"price: {self.price}")
+        print(f"Stock: {self.stock}")
+        
+product=Product('watch',5000,70)
+product.show_products()
+product.add_stock(20)
+product.show_products()
+product.buy(10)
+product.show_products()
