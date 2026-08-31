@@ -62,10 +62,36 @@ class Product:
         print(f"Names: {self.name}")
         print(f"price: {self.price}")
         print(f"Stock: {self.stock}")
-        
+   
+# simple product     
 product=Product('watch',5000,70)
 product.show_products()
 product.add_stock(20)
 product.show_products()
 product.buy(10)
 product.show_products()
+
+class ShopingCart:
+    def __init__(self):
+        self.item=[]
+    def add_item(self,p):
+        self.item.append(p)
+    def show_cart(self):
+        for i in self.item:
+            print(i)
+    
+product1={
+    'name':'Shirt',
+    'price':1800
+}
+product2={
+    'name':'Coat',
+    'price':7500
+}
+
+card=ShopingCart()
+card.add_item(product1)
+card.add_item(product2)
+card.show_cart()
+    
+
