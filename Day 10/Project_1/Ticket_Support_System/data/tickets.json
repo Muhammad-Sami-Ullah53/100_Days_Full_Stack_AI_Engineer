@@ -1,0 +1,14 @@
+[
+    {
+        "ticket_id": 101,
+        "customer": "Ali",
+        "email": "ali@example.com",
+        "message": "My payment failed"
+    },
+    {
+        "ticket_id": 102,
+        "customer": "Sara",
+        "email": "sara@example.com",
+        "message": "I cannot login to my account"
+    }
+]
