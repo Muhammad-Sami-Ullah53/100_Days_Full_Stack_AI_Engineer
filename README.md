@@ -1,4 +1,4 @@
-# 🚀 100 Days to become full AI Stack Engineering
+# 🚀 100 Days of Full Stack AI Engineering
 
 > **100 Days. One Goal. Build Real AI Systems.**
 
